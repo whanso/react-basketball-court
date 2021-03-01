@@ -21,7 +21,7 @@ export type ICounterProps = {
   className?: string;
 };
 
-const App: React.FC<ICounterProps> = ({ className = "" }) => {
+export const AppCounter: React.FC<ICounterProps> = ({ className = "" }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const App: React.FC<ICounterProps> = ({ className = "" }) => {
   return <Counter className={className} count={count} />;
 };
 
-export default App;
+// export AppCounter;
